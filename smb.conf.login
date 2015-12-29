@@ -1,0 +1,61 @@
+	
+[global]
+	
+	workgroup = MYGROUP
+	server string = Samba Server Version %v
+	
+	
+	
+	
+	# logs split per machine
+	log file = /var/log/samba/log.%m
+	# max 50KB per log file, then rotate
+	max log size = 50
+	
+
+	security = user
+	passdb backend = tdbsam
+
+
+	
+	
+
+
+	
+	
+	# the login script name depends on the machine name
+	# the login script name depends on the unix user used
+	# disables profiles support by specifing an empty path
+	
+	
+	
+	
+	
+	
+	
+	
+	load printers = yes
+	cups options = raw
+
+	#obtain list of printers automatically on SystemV
+
+
+
+
+	
+[homes]
+	comment = Home Directories
+	browseable = no
+	writable = yes
+	
+[printers]
+	comment = All Printers
+	path = /var/spool/samba
+	browseable = no
+	guest ok = no
+	writable = no
+	printable = yes
+	
+	
+
+	
