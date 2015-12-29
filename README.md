@@ -1,2 +1,6 @@
 # samba
-CentOS 6.x 一键安装samba服务
+##########################################################
+        Usage:
+                 install.sh install [anonymous | login]
+                 install.sh remove
+##########################################################
